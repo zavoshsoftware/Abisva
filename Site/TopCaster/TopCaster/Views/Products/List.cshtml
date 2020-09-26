@@ -1,0 +1,108 @@
+﻿@model ViewModels.ProductListViewModel
+@{
+    ViewBag.Title = Model.ProductGroup.PageTitle;
+    Layout = "~/Views/Shared/FrontEnd/_FronEndLayout.cshtml";
+}
+
+<section class="breadcrumb-area" style="background-image: url(/img/breadcrumb/breadcrumb-bg.jpg);">
+	<div class="container text-center">
+		<h1>@Model.ProductGroup.Title</h1>
+	</div>
+</section>
+
+<section class="breadcrumb-bottom-area">
+	<div class="container">
+		<div class="left pull-left">
+			<a href="#">محصولات</a>
+		</div>
+		<div class="right pull-right">
+			<ul>
+				<li><a href="/">صفحه اصلی</a></li>
+				<li><i class="fa fa-angle-left" aria-hidden="true"></i></li>
+				<li>@Model.ProductGroup.Title</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<section class="shop-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+			 
+				<div class="product-items">
+					<div class="row">
+					
+						@foreach (var product in Model.Products)
+						{
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div class="single-product-item">
+									<div class="img-holder">
+										<img src="@product.ImageUrl" alt="@product.Title">
+										<div class="overlay">
+											<div class="box">
+												<div class="content">
+													<a class="thm-btn yellow-bg" href="/product/@product.Code">
+														<i class="fa fa-eye" aria-hidden="true"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="title">
+										<h3>@product.Title</h3>
+									 
+										<a href="/product/@product.Code">مشاهده جزییات</a>
+									</div>
+								</div>
+							</div>
+						}
+					</div>
+				 
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-7 col-xs-12">
+				<div class="sidebar-wrapper">
+			 
+					<div class="single-sidebar">
+						<div class="sidebar-title">
+							<h1>گروه محصولات</h1>
+							<span class="border"></span>
+						</div>
+						<ul class="categories clearfix">
+							@foreach (var productGroup in Model.SidebarProductGroups)
+							{
+								<li><a href="/category/@productGroup.UrlParam"><i class="fa fa-angle-left" aria-hidden="true"></i>@productGroup.Title</a></li>
+							}
+					 
+						</ul>
+					</div>
+
+					<div class="single-sidebar">
+						<div class="sidebar-title">
+							<h1>آخرین اخبار و مقالات</h1>
+							<span class="border"></span>
+						</div>
+						<ul class="categories clearfix">
+							
+							@foreach (var blog in Model.SidebarLatestBlog)
+							{
+								<li>
+								 
+						 <a href="/blog/@blog.UrlParam"><i class="fa fa-angle-left" aria-hidden="true"></i>@blog.Title</a> 
+								</li>
+							}
+
+				
+				 
+
+						</ul>
+					</div>
+ 
+				</div>
+			</div>
+		</div>
+	</div>
+</section>     
