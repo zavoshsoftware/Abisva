@@ -826,6 +826,8 @@
     <Content Include="img\team\2.jpg" />
     <Content Include="img\team\3.jpg" />
     <Content Include="img\team\4.jpg" />
+    <Content Include="img\WhatsApp_Image.png" />
+    <Content Include="img\WhatsApp_Image2.png" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\kendo.modernizr.custom.js" />
     <Content Include="Scripts\kendo\2017.3.913\angular.min.js" />

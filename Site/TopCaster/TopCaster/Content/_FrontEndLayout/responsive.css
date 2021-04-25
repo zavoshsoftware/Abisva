@@ -613,14 +613,14 @@
 }
 .main-menu .navigation > li > ul > li > a::before{
   display: none;
-}		
-.main-menu .navbar-collapse > .navigation > li:hover > a,
-.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
-.main-menu .navbar-collapse > .navigation > li.current > a{
-  background:#f7941a;
-  color:#292929 !important;
-  box-shadow: 2px 1px 2px #fff;
-}	
+}
+    .main-menu .navbar-collapse > .navigation > li:hover > a,
+    .main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+    .main-menu .navbar-collapse > .navigation > li.current > a {
+        background: #054660;
+        color: #292929 !important;
+        box-shadow: 2px 1px 2px #fff;
+    }	
 .main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
   display:block;
 }    

@@ -1,43 +1,46 @@
 ﻿@model ViewModels._BaseViewModel
 <header class="header-area">
     <div class="container">
-        <div class="logo pull-right">
-            <a href="/">
-                <img src="/img/logo.png" alt="KGT oil">
-            </a>
-        </div>
+            <div class="logo pull-right">
+                <a href="/">
+                    <img src="~/img/WhatsApp_Image2.png" alt="KGT oil" style="width:100px;height:100px" />
+                </a>
+
+            </div>
         <div class="top-info pull-left">
-           
-            <ul>
-                    <li class="single-info-box">
-                        <div class="icon-holder">
-                            <span class="flaticon-earth-grid"></span>
-                        </div>
-                        <div class="text-holder">
-                            <p><span>آدرس:</span>کیلومتر 18 جاده مخصوص کرج، <br>خیابان گلزار، پلاک 9
-                            </p>
-                        </div>
-                    </li>
-                    <li class="single-info-box">
-                        <div class="icon-holder">
-                            <span class="flaticon-email-envelope-back-symbol-on-phone-screen"></span>
-                        </div>
-                        <div class="text-holder">
-                            <p><span>اطلاعات تماس:</span>+(98) 21 88880000<br>info@abisva.ir</p>
-                        </div>
-                    </li>
-                    <li class="hidden-sm  hidden-xs">
-                        <div class="social-links">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+            <ul class="top-info">
+
+                <li class="single-info-box">
+                    <div class="icon-holder">
+                        <span class="flaticon-earth-grid"></span>
+                    </div>
+                    <div class="text-holder">
+                        <p>
+                            <span>&nbsp;:</span>بندر عباسخیابان شهرک نبوت<br />میثم 34
+                        </p>
+                    </div>
+                </li>
+                <li class="single-info-box">
+                    <div class="icon-holder">
+                        <span class="flaticon-email-envelope-back-symbol-on-phone-screen"></span>
+                    </div>
+                    <div class="text-holder">
+                        <p><span>اطلاعات تماس:</span>&nbsp;4008-954-0917<br />0917-620-0306<br />info@novinabborna.com</p>
+                    </div>
+                </li>
+                <li class="hidden-sm  hidden-xs">
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            
         </div>
-    </div>
+        </div>
 </header>
 <!--End header area-->
 <!--Start mainmenu area-->
@@ -57,20 +60,20 @@
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
                                 <li class="current"><a href="/">صفحه اصلی</a></li>
-                            
-	                            <li class="dropdown">
-		                            <a href="#">محصولات</a>
-		                            <ul>
-			                            @foreach (var productGroup in Model.MenuProductGroups)
-			                            {
-				                            <li><a href="/category/@productGroup.UrlParam">@productGroup.Title</a></li>
-			                            }
-		                            </ul>
-	                            </li>
-	                            <li ><a href="/blogs/list">اخبار و مقالات</a></li>
-	                            <li><a href="/about">درباره ما</a></li>
 
-                              
+                                <li class="dropdown">
+                                    <a href="#">محصولات</a>
+                                    <ul>
+                                        @foreach (var productGroup in Model.MenuProductGroups)
+                                        {
+                                            <li><a href="/category/@productGroup.UrlParam">@productGroup.Title</a></li>
+                                        }
+                                    </ul>
+                                </li>
+                                <li><a href="/blogs/list">اخبار و مقالات</a></li>
+                                <li><a href="/about">درباره ما</a></li>
+
+
 
                                 <li><a href="/contact">تماس با ما</a></li>
                             </ul>
