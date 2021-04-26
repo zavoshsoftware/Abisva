@@ -420,3 +420,66 @@ body, p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button, table, th, td, span {
     font-weight: 800;
     color: #000;
 }
+/*zavosh*/
+/***********************(mr nruzi)************************/
+.top-info {
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-between;
+}
+
+    .top-info.pull-left {
+        padding-top: 0px;
+    }
+
+@media screen and (max-width:768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: -100;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .single-info-box {
+        display: block !important;
+        width: 100% !important;
+        margin: 0px;
+        padding: 0px;        
+    }
+    .text-holder br{
+        display:none;
+    }
+    .top-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+        .top-info ul li {
+            width: 100% !important;
+            display: block !important;
+            margin: 10px 0px;
+        }
+
+            .top-info ul li .social-links ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .top-info ul li .social-links ul li {
+                display: flex;                
+                justify-content: center;
+            }
+                .top-info ul li .social-links ul li a {
+                    display: flex;
+                    justify-content: center;
+                }
+}         

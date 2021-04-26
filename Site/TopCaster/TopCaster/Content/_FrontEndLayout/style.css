@@ -5604,27 +5604,3 @@ single-product-item:hover .img-holder img {
     text-align: center;
 }
 
-/*zavosh*/
-/***********************(mr nruzi)************************/
-.top-info{
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between
-}
-.top-info.pull-left{
-    padding-top:0px;
-}
-@media screen and (max-width:768px){
-    .container{        
-        display:flex;        
-        justify-content:center;
-        flex-direction:column;        
-        z-index:-100;
-    }
-    .navigation{
-        display:flex;
-        flex-direction:column;
-        width:100vw;
-    }
-    
-}

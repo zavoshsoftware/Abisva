@@ -3,8 +3,8 @@
 @{
     ViewBag.Title = "contact kgt oil";
     Layout = "~/Views/Shared/FrontEnd/_FronEndLayout.cshtml";
-} 
- <!--Start breadcrumb area-->
+}
+<!--Start breadcrumb area-->
 <section class="breadcrumb-area" style="background-image: url(img/breadcrumb/breadcrumb-bg.jpg);">
     <div class="container text-center">
         <h1>تماس با ما</h1>
@@ -40,7 +40,7 @@
                     @*<h3>I would like to discuss:</h3>*@
                     <div class="contact-form text-right">
                         <div class="row">
-                          
+
                             <div class="col-md-6">
                                 <input type="text" name="mail" placeholder="ایمیل *" class="font-IRANSans">
                             </div>
@@ -48,7 +48,7 @@
                                 <input type="text" name="name" placeholder="نام و نام خانوادگی *" class="font-IRANSans">
                             </div>
                         </div>
-                       
+
                         <div class="row">
                             <div class="col-md-12">
                                 <textarea name="message" placeholder="پیغام" class="font-IRANSans"></textarea>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
             <div class="col-md-4 col-sm-7 col-xs-12">
                 <div class="contact-details">
                     <h2 class="text-right">اطلاعات تماس</h2>
@@ -76,7 +76,9 @@
                                         <span class="flaticon-signs"></span>
                                     </div>
                                     <div class="text-box">
-                                        <p><span>آدرس:</span> &nbsp; بندر عباس خیابان شهرک نبوت<br />میثم 34</p>
+                                        <p>
+                                            <span>&nbsp;آدرس:&nbsp;</span>بندر عباس خیابان شهرک نبوت <br />میثم 34
+                                        </p>
                                     </div>
                                 </li>
                                 <li>
@@ -84,8 +86,7 @@
                                         <span class="flaticon-email-envelope-back-symbol-on-phone-screen"></span>
                                     </div>
                                     <div class="text-box">
-                                        <p><span>اطلاعات تماس:</span> &nbsp;4008-954-0917 <br />
-                                        0917-620-0306 &nbsp;info@novinabborna.com</p>
+                                        <p><span>اطلاعات تماس &nbsp;:</span>&nbsp; 4008 - 954 - 0917 ... <br />0306 - 620 - 0917 <br /> info@novinabborna.com</p>
                                     </div>
                                 </li>
                                 <li>
@@ -118,7 +119,9 @@
                                         <span class="flaticon-signs"></span>
                                     </div>
                                     <div class="text-box">
-                                        <p><span>آدرس:</span> &nbsp; بندر عباس خیابان شهرک نبوت<br />میثم 34</p>
+                                        <p>
+                                            <span>&nbsp;آدرس:&nbsp;</span>بندر عباس خیابان شهرک نبوت <br />میثم 34
+                                        </p>
                                     </div>
                                 </li>
                                 <li>
@@ -126,10 +129,7 @@
                                         <span class="flaticon-email-envelope-back-symbol-on-phone-screen"></span>
                                     </div>
                                     <div class="text-box">
-                                        <p>
-                                            <span>اطلاعات تماس:</span> &nbsp;4008-954-0917 <br />
-                                            0917-620-0306 &nbsp;info@novinabborna.com
-                                        </p>
+                                        <p><span>اطلاعات تماس &nbsp;:</span>&nbsp; 4008 - 954 - 0917 ... <br />0306 - 620 - 0917 <br /> info@novinabborna.com</p>
                                     </div>
                                 </li>
                                 <li>
@@ -165,47 +165,47 @@
                 </div>
             </div>
             @*<div class="col-md-8 col-sm-12 col-xs-12">
-                <div class="send-message-form">
-                    <div class="title">
-                        <h2>Send Messge Us</h2>
-                        <span class="border"></span>
+                    <div class="send-message-form">
+                        <div class="title">
+                            <h2>Send Messge Us</h2>
+                            <span class="border"></span>
+                        </div>
+                        <h3>I would like to discuss:</h3>
+                        <div class="contact-form">
+                            <div class="alert alert-danger" id="errorDivQ"> an error occurred.</div>
+                            <div class="alert alert-success" id="SuccessDivQ">Tanks. your message submited successfully</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" id="name" name="name" placeholder="Your Name *">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" id="country" name="country" placeholder="Your country *">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" id="mail" name="mail" placeholder="Your Mail *">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" id="phonumber" name="phonumber" placeholder="Phone Num">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea name="message" id="message" placeholder="Write Your Needs..."></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="thm-btn yellow-bg" type="button" id="submit">Your Message</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>I would like to discuss:</h3>
-                    <div class="contact-form">
-                        <div class="alert alert-danger" id="errorDivQ"> an error occurred.</div>
-                        <div class="alert alert-success" id="SuccessDivQ">Tanks. your message submited successfully</div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" id="name" name="name" placeholder="Your Name *">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" id="country" name="country" placeholder="Your country *">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" id="mail" name="mail" placeholder="Your Mail *">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" id="phonumber" name="phonumber" placeholder="Phone Num">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <textarea name="message" id="message" placeholder="Write Your Needs..."></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button class="thm-btn yellow-bg" type="button" id="submit">Your Message</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>*@
+                </div>*@
         </div>
     </div>
-</section> 
+</section>
 
 
 @section scripts
@@ -223,20 +223,19 @@
                     $.ajax(
                         {
                             url: "/ContactUsForms/SubmitContactForm",
-                            data: { Name: nameVal, Email: emailVal, Message: messageVal, phonenumber: phonumberVal, country:countryVal },
+                            data: { Name: nameVal, Email: emailVal, Message: messageVal, phonenumber: phonumberVal, country: countryVal },
                             type: "GET"
                         }).done(function (result) {
-                        if (result == 'true') {
-                            $('#errorDivQ').css('display', 'none');
-                            $('#SuccessDivQ').css('display', 'block');
-                        }
-                        else
-                        {
-                            $('#errorDivQ').css('display', 'block');
-                            $('#SuccessDivQ').css('display', 'none');
-                            $('#errorDivQ').html('Invalid email.');
-                        }
-                    });
+                            if (result == 'true') {
+                                $('#errorDivQ').css('display', 'none');
+                                $('#SuccessDivQ').css('display', 'block');
+                            }
+                            else {
+                                $('#errorDivQ').css('display', 'block');
+                                $('#SuccessDivQ').css('display', 'none');
+                                $('#errorDivQ').html('Invalid email.');
+                            }
+                        });
                 }
                 else {
                     $('#errorDivQ').css('display', 'block');
