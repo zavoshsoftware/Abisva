@@ -1,6 +1,7 @@
 ﻿@model ViewModels.ProductDetailViewModel
 @{
 		ViewBag.Title = Model.Product.Title;
+		ViewBag.Canonical = "https://novinabborna.com/product/" + Model.Product.Code;
 		Layout = "~/Views/Shared/FrontEnd/_FronEndLayout.cshtml";
 }
 
