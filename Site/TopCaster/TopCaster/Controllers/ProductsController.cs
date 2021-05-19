@@ -202,5 +202,19 @@ namespace TopCaster.Controllers
 
             return View(productDetail);
         }
+        [AllowAnonymous]
+        [Route("product/desalination")]
+        public ActionResult DetailsAbshirinKon()
+        {
+           
+            ProductDetailViewModel productDetail = new ProductDetailViewModel()
+            {
+                SidebarLatestBlog = db.Blogs.Where(c => c.IsDeleted == false && c.IsActive).OrderByDescending(c => c.CreationDate).ToList(),
+                SidebarProductGroups = db.ProductGroups.Where(c => c.IsDeleted == false && c.IsActive).OrderBy(c => c.Order).ToList(),
+            };
+
+
+            return View(productDetail);
+        }
     }
 }

@@ -46,16 +46,16 @@
 			<h1>خدمات ما</h1>
 		</div>
 		<div class="row">
-			@foreach (var text in Model.HomeProductGroups)
-            {
+			@*@foreach (var text in Model.HomeProductGroups)
+            {*@
 					<div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="single-service-item">
 							<div class="img-holder">
-								<img src="@text.ImageUrl" alt="Awesome Image">
+								<img src="~/img/nab4.png" />
 								<div class="overlay">
 									<div class="box">
 										<div class="content">
-											<a class="thm-btn yellow-bg" href="/category/@text.UrlParam">اطلاعات بیشتر</a>
+											<a class="thm-btn yellow-bg" href="/product/desalination">اطلاعات بیشتر</a>
 										</div>
 									</div>
 								</div>
@@ -65,13 +65,59 @@
 									<span class="flaticon-science"></span>
 								</div>
 								<div class="text">
-									<h3>@text.Title</h3>
-									<p>@text.Summery</p>
+									<h3>دستگاه آب شیرین کن</h3>
+									<p>اهمیت شیرین سازی و تصفیه آب های لب شور و شور به مناطق کم آب و یا نیازهای بزرگ آبی، استفاده از تکنولوژی آب شیرین کن ها را بسیار پررنگ و حیاتی کرده است. </p>
 								</div>
 							</div>
 						</div>
 					</div>
-            }
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="single-service-item">
+							<div class="img-holder">
+								<img src="~/img/nab5.png" />
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<a class="thm-btn yellow-bg" href="/product/desalination">اطلاعات بیشتر</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-holder">
+								<div class="icon">
+									<span class="flaticon-science"></span>
+								</div>
+								<div class="text">
+									<h3>دستگاه آب شیرین کن</h3>
+									<p>تولید و راه اندازی سیستم های آب شیرین کن ها آب دریا و آبهای لب شور به روش اسمز معکوس و تکنولوژی های پیشرفته مورد توجه قرار گرفته است. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="single-service-item">
+							<div class="img-holder">
+								<img src="~/img/nab11.png" />
+								<div class="overlay">
+									<div class="box">
+										<div class="content">
+											<a class="thm-btn yellow-bg" href="/product/desalination">اطلاعات بیشتر</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-holder">
+								<div class="icon">
+									<span class="flaticon-science"></span>
+								</div>
+								<div class="text">
+									<h3>دستگاه آب شیرین کن</h3>
+									<p>آب شیرین کن دستگاهی است که برای نمک زدایی و شیرین سازی آب استفاده می¬شود. سیستم تصفیه آب اسمز معکوس آب شور و دارای املاح را از دریا، چاه آب، نهر های زیر زمینی و قنات ها می گیرد. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+            @*}*@
 
 		</div>
 
@@ -164,7 +210,7 @@
 			<!--Start single tab content-->
 			<div class="inner-box tab-pane fade active" id="history">
 				<div class="sec-title">
-					<p>به وب سایت آبیسوا خوش آمدید</p>
+					<p>به وب سایت نوین آب برنا خوش آمدید</p>
 					<h1>تاریخچه</h1>
 				</div>
 				<div class="timeline_wrapper">

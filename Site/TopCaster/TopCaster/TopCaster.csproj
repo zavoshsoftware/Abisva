@@ -704,6 +704,7 @@
     <Content Include="fonts\montserrat\montserrat-semibold\preview.html" />
     <Content Include="fonts\montserrat\montserrat-semibold\styles.css" />
     <Content Include="Global.asax" />
+    <Content Include="img\a.png" />
     <Content Include="img\about\1.jpg" />
     <Content Include="img\about\bg %281%29.jpg" />
     <Content Include="img\about\bg-image.jpg" />
@@ -741,6 +742,17 @@
     <Content Include="img\logo-kgt.png" />
     <Content Include="img\logo.jpg" />
     <Content Include="img\logo.png" />
+    <Content Include="img\nab1.png" />
+    <Content Include="img\nab10.jpg" />
+    <Content Include="img\nab11.png" />
+    <Content Include="img\nab2.png" />
+    <Content Include="img\nab3.png" />
+    <Content Include="img\nab4.png" />
+    <Content Include="img\nab5.png" />
+    <Content Include="img\nab6.png" />
+    <Content Include="img\nab7.png" />
+    <Content Include="img\nab8.jpg" />
+    <Content Include="img\nab9.jpg" />
     <Content Include="img\news\1.jpg" />
     <Content Include="img\news\2.jpg" />
     <Content Include="img\news\3.jpg" />
@@ -1583,6 +1595,7 @@
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Products\DetailsAbshirinKon.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
